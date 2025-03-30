@@ -1,2 +1,2 @@
 [Image]
-image=docker.io/library/caddy:2.9.1
+Image=docker.io/library/caddy:2.9.1
