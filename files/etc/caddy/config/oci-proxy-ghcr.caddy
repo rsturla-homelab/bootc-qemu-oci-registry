@@ -1,0 +1,3 @@
+ghcr.oci.homelab.sturla.tech {
+	reverse_proxy oci-proxy-ghcr:5000
+}

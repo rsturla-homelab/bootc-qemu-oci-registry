@@ -1,0 +1,20 @@
+[Unit]
+Description=A Caddy proxy container to access OCI registry quadlets
+After=local-fs.target network-online.target
+
+[Container]
+Image=caddy.image
+ContainerName=caddy-proxy
+Environment=HTTP_PORT=10080
+Environment=HTTPS_PORT=10443
+Network=oci.network
+PublishPort=80:10080
+PublishPort=443:10443
+Volume=/etc/caddy/:/etc/caddy/:ro,Z
+GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
+
+[Service]
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target

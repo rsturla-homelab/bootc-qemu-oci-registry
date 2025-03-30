@@ -29,5 +29,5 @@ jobs:
     uses: rsturla-homelab/bootc-qemu-centos-base/.github/workflows/_build.yml@main
     secrets: inherit
     with:
-      image-name: bootc/qemu/zot-registry
+      image-name: bootc/qemu/oci-registry
       os-version: stream10
