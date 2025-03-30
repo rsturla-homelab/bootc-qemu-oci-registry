@@ -1,0 +1,12 @@
+version: 0.1
+
+http:
+  address: 0.0.0.0:5000
+
+storage:
+  filesystem:
+    rootdirectory: /var/lib/registry
+
+proxy:
+  remoteurl: https://docker.io
+  ttl: 0

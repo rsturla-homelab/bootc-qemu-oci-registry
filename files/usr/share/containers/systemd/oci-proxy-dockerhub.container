@@ -1,13 +1,13 @@
 [Unit]
-Description=A registry container
+Description=OCI proxy for docker.io
 After=network-online.target
 
 [Container]
 Image=docker.io/library/registry:3.0.0-rc.3
-ContainerName=registry
-Volume=registry.volume:/var/lib/registry
-Volume=/etc/registry/config.yml:/etc/distribution/config.yml:ro,Z
-PublishPort=5000:5000
+ContainerName=oci-proxy-dockerhub
+Network=oci.network
+Volume=oci-proxy-quay.volume:/var/lib/registry
+Volume=/etc/registry/config/oci-proxy-dockerhub.yml:/etc/distribution/config.yml:ro,Z
 GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
 
 [Service]

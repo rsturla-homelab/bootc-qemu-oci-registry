@@ -1,0 +1,17 @@
+[Unit]
+Description=OCI proxy for ghcr.io
+After=network-online.target
+
+[Container]
+Image=docker.io/library/registry:3.0.0-rc.3
+ContainerName=oci-proxy-ghcr
+Network=oci.network
+Volume=oci-proxy-ghcr.volume:/var/lib/registry
+Volume=/etc/registry/config/oci-proxy-ghcr.yml:/etc/distribution/config.yml:ro,Z
+GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
+
+[Service]
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target

@@ -2,5 +2,6 @@ FROM ghcr.io/rsturla-homelab/bootc/qemu/centos-base:stream10@sha256:1e19e9492cd8
 
 COPY files/ /
 
-#RUN ln -s /usr/share/containers/systemd/zot-registry.container /usr/lib/bootc/bound-images.d/zot-registry.container
-RUN ln -s /usr/share/containers/systemd/registry.container /usr/lib/bootc/bound-images.d/registry.container
+RUN for file in /usr/share/containers/systemd/*.container; do \
+        ln -s "$file" /usr/lib/bootc/bound-images.d/$(basename "$file"); \
+    done
