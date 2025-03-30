@@ -2,6 +2,6 @@ FROM ghcr.io/rsturla-homelab/bootc/qemu/centos-base:stream10@sha256:1e19e9492cd8
 
 COPY files/ /
 
-RUN for file in /usr/share/containers/systemd/*.container; do \
+RUN for file in /usr/share/containers/systemd/*.image; do \
         ln -s "$file" /usr/lib/bootc/bound-images.d/$(basename "$file"); \
     done

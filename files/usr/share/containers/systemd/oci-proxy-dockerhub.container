@@ -3,7 +3,7 @@ Description=OCI proxy for docker.io
 After=network-online.target
 
 [Container]
-Image=docker.io/library/registry:3.0.0-rc.3
+Image=distribution.image
 ContainerName=oci-proxy-dockerhub
 Network=oci.network
 Volume=oci-proxy-quay.volume:/var/lib/registry

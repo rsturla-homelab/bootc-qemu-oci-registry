@@ -3,7 +3,7 @@ Description=OCI proxy for ghcr.io
 After=network-online.target
 
 [Container]
-Image=docker.io/library/registry:3.0.0-rc.3
+Image=distribution.image
 ContainerName=oci-proxy-ghcr
 Network=oci.network
 Volume=oci-proxy-ghcr.volume:/var/lib/registry
