@@ -8,5 +8,5 @@ storage:
     rootdirectory: /var/lib/registry
 
 proxy:
-  remoteurl: https://docker.io
+  remoteurl: https://registry-1.docker.io
   ttl: 0
