@@ -1,3 +1,3 @@
-# bootc-qemu-zot-registry
+# bootc-qemu-oci-registry
 
-This repository contains the bootc image for deploying Zot Registry on QEMU.
+This repository contains the bootc image for deploying an OCI Registry on QEMU.
