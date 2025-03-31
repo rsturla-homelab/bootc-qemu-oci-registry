@@ -5,11 +5,9 @@ After=local-fs.target network-online.target
 [Container]
 Image=caddy.image
 ContainerName=caddy-proxy
-Environment=HTTP_PORT=10080
-Environment=HTTPS_PORT=10443
 Network=oci.network
-PublishPort=80:10080
-PublishPort=443:10443
+PublishPort=10080:80
+PublishPort=10443:443
 Volume=/etc/caddy/:/etc/caddy/:ro,Z
 GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
 
