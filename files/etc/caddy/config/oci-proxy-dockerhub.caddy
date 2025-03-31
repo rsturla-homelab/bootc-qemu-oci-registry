@@ -1,3 +1,3 @@
-dockerhub.oci.homelab.sturla.tech {
+http://dockerhub.oci.homelab.sturla.tech {
 	reverse_proxy oci-proxy-dockerhub:5000
 }

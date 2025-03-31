@@ -6,8 +6,8 @@ After=local-fs.target network-online.target
 Image=caddy.image
 ContainerName=caddy-proxy
 Network=oci.network
-PublishPort=10080:80
-PublishPort=10443:443
+PublishPort=80:80
+PublishPort=443:443
 Volume=/etc/caddy/:/etc/caddy/:ro,Z
 GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
 
