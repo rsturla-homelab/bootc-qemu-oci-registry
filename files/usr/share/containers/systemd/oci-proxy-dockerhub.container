@@ -6,6 +6,7 @@ After=network-online.target
 Image=distribution.image
 ContainerName=oci-proxy-dockerhub
 Network=oci.network
+PublishPort=5000:5000
 Volume=oci-proxy-dockerhub.volume:/var/lib/registry
 Volume=/etc/registry/config/oci-proxy-dockerhub.yml:/etc/distribution/config.yml:ro,Z
 GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
