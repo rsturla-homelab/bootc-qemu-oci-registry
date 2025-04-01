@@ -1,4 +1,4 @@
-FROM ghcr.io/rsturla-homelab/bootc/qemu/centos-base:stream10@sha256:d6249f14adc87a43208d163ab2843c7ad07e82c58874778b2d8a9f2bbac665cd
+FROM ghcr.io/rsturla-homelab/bootc/qemu/centos-base:stream10@sha256:299a69c5dfb5f9791e9b9afe4030942cb5e5861dee8df09f6d0be1e6597c5135
 
 COPY files/ /
 
