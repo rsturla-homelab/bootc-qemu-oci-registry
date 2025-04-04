@@ -26,7 +26,7 @@ concurrency:
 
 jobs:
   build:
-    uses: rsturla-homelab/bootc-qemu-centos-base/.github/workflows/_build.yml@main
+    uses: rsturla-homelab/bootc-centos-base/.github/workflows/_build.yml@main
     secrets: inherit
     with:
       image-name: bootc/qemu/oci-registry
