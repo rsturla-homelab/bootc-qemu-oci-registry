@@ -26,14 +26,14 @@ concurrency:
 
 jobs:
   build:
-    uses: rsturla-homelab/bootc-qemu-centos-base/.github/workflows/_build.yml@main
+    uses: rsturla-homelab/bootc-centos-base/.github/workflows/_build.yml@main
     secrets: inherit
     strategy:
       fail-fast: false
       matrix:
         platform: [qemu]
     with:
-      image-name: bootc/qemu/oci-registry
+      image-name: bootc/${{ matrix.platform }}/oci-registry
       os-version: stream10
       build-args: |
         IMAGE=ghcr.io/${{ github.repository_owner }}/bootc/${{ matrix.platform }}/centos-base
