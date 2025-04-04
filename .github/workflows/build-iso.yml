@@ -23,7 +23,7 @@ jobs:
         uses: bootc-warehouse/bootc-image-builder-action@main
         with:
           config-file: ./iso.toml
-          image: ghcr.io/${{ github.repository_owner }}/bootc/qemu/zot-registry:stream10
+          image: ghcr.io/${{ github.repository_owner }}/bootc/qemu/oci-registry:stream10
           types: anaconda-iso
           additional-args: --use-librepo=True
 
