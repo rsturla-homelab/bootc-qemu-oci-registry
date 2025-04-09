@@ -1,4 +1,7 @@
-FROM ghcr.io/rsturla-homelab/bootc/qemu/centos-base:stream10@sha256:55cc482cb244a3d2ffa23dc75180357f430c2a1d83407efeb39ca7b2e106cb38
+ARG BASE_IMAGE_REGISTRY=quay.io/centos-bootc/centos-bootc
+ARG BASE_IMAGE_TAG=stream10
+ARG BASE_IMAGE_DIGEST=sha256:3765fecf1b46b686a139198f1a6a1da4f4daf33ff44ac05840bda1e09a8257e2
+FROM ${BASE_IMAGE_REGISTRY}:${BASE_IMAGE_TAG}@${BASE_IMAGE_DIGEST}
 
 COPY files/ /
 
