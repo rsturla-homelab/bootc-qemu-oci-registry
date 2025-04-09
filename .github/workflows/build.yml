@@ -31,3 +31,4 @@ jobs:
     with:
       image-name: bootc/qemu/oci-registry
       os-version: stream10
+      base-image-name: centos-base-qemu-stream10
