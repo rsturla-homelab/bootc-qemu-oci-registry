@@ -20,7 +20,7 @@ jobs:
 
       - name: Build ISO
         id: build-iso
-        uses: bootc-warehouse/bootc-image-builder-action@0ded99949fc4dea4b874ba641c7a1fd4edd22b1e # v0.0.1
+        uses: bootc-warehouse/bootc-image-builder-action@019bb59c5100ecec4e78c9e94e18a840110f7a0b # v0.0.2
         with:
           config-file: ./iso.toml
           image: ghcr.io/${{ github.repository_owner }}/bootc/qemu/oci-registry:stream10
