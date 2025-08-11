@@ -2,4 +2,4 @@ images:
   - name: centos-base-qemu-stream10
     image: ghcr.io/rsturla-homelab/bootc/qemu/centos-base
     tag: stream10
-    digest: sha256:8803fd33824a703ae4524990b81151880f18f286988d7d96b67cab805af311f7
+    digest: sha256:e7c9843781e99efccc36c4034110c43238826144abceee0f0de2363f5856819b
