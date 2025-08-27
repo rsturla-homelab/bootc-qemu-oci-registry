@@ -1,2 +1,2 @@
 [Image]
-Image=docker.io/library/caddy:2.10.0@sha256:30ccf0cb027e1d06cd6e453c04fc1c8eec665629b22ed69602c14c8a0512ead0
+Image=docker.io/library/caddy:2.10.2@sha256:4163a5c7b7631707956db4057720ec75de429992d5e3aa518d54872c01644dbe
