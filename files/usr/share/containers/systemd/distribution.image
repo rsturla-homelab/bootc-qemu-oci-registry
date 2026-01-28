@@ -1,2 +1,2 @@
 [Image]
-Image=docker.io/library/registry:3.0.0@sha256:1fc7de654f2ac1247f0b67e8a459e273b0993be7d2beda1f3f56fbf1001ed3e7
+Image=docker.io/library/registry:3.0.0@sha256:650406796a6a7c0c45d098cdcc4d6c5f5ae47c62e9fec489d287e2bfde38fe63
